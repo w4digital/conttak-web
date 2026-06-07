@@ -1,5 +1,3 @@
-# CONTTAK - Gestão de finanças pessoais
-
 ## Visão Geral
 
 Este projeto é um sistema de gestão financeira pessoal com foco em clareza, simplicidade e evolução incremental.
@@ -93,36 +91,84 @@ Preferir:
 
 ---
 
-# Stack Inicial
+# Stack Oficial do Projeto
 
-## Frontend
+## Stack obrigatória inicial
+
+O projeto deve utilizar obrigatoriamente as seguintes tecnologias:
+
+### Frontend
 
 - Next.js;
 - React;
 - TypeScript;
-- TailwindCSS.
+- TailwindCSS;
+- Shadcn/UI
 
-## Backend Inicial
+### Backend Inicial
 
-Inicialmente acoplado ao Next.js.
+- Next.js API Routes ou Server Actions;
+- TypeScript.
 
-Evolução futura:
-
-- NestJS;
-- Java + Spring Boot para serviços específicos;
-- arquitetura modular/microserviços apenas quando necessário.
-
-## Banco de Dados
-
-Inicial:
+### Banco de Dados
 
 - PostgreSQL.
 
-Possíveis evoluções:
+### ORM
 
+- Prisma ORM.
+
+### Autenticação
+
+- JWT;
+- Auth.js ou implementação própria.
+
+### Infraestrutura inicial
+
+- Vercel para frontend;
+- Banco PostgreSQL gerenciado.
+
+---
+
+## Stack futura aprovada
+
+As seguintes tecnologias podem ser adicionadas futuramente:
+
+- NestJS;
+- Java + Spring Boot;
 - Redis;
 - filas;
-- event-driven.
+- WebSockets;
+- event-driven;
+- IA;
+- automações;
+- realtime.
+
+---
+
+## Restrições técnicas
+
+Evitar introduzir novas stacks sem necessidade clara.
+
+Toda nova dependência deve responder:
+
+- Qual problema resolve?
+- O custo operacional compensa?
+- Existe solução mais simples?
+- A complexidade adicional vale a pena?
+
+---
+
+## Padronização obrigatória
+
+Evitar múltiplas bibliotecas para o mesmo propósito.
+
+Exemplos:
+
+- apenas um ORM;
+- apenas uma estratégia principal de estado;
+- apenas um padrão de estilização;
+- evitar mistura desnecessária de arquiteturas.
 
 ---
 
